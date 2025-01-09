@@ -377,4 +377,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # macOS
-.DS_Store 
+.DS_Store
+
+# Reference SDK
+paddle-python-sdk-1.4.0/
