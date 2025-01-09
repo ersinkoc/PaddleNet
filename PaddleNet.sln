@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddleNet.SDK", "PaddleNet.SDK\PaddleNet.SDK.csproj", "{3BF3E699-8207-4515-8DD9-74DF884DBDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddleNet.Tests", "PaddleNet.Tests\PaddleNet.Tests.csproj", "{DF4DB048-1909-4665-BC64-22B6177A703B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddleNet.Examples", "PaddleNet.Examples\PaddleNet.Examples.csproj", "{735968F3-BFB0-425F-9C41-2B49BE1F2A02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF3E699-8207-4515-8DD9-74DF884DBDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF3E699-8207-4515-8DD9-74DF884DBDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF3E699-8207-4515-8DD9-74DF884DBDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF3E699-8207-4515-8DD9-74DF884DBDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4DB048-1909-4665-BC64-22B6177A703B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4DB048-1909-4665-BC64-22B6177A703B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4DB048-1909-4665-BC64-22B6177A703B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4DB048-1909-4665-BC64-22B6177A703B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735968F3-BFB0-425F-9C41-2B49BE1F2A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735968F3-BFB0-425F-9C41-2B49BE1F2A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735968F3-BFB0-425F-9C41-2B49BE1F2A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735968F3-BFB0-425F-9C41-2B49BE1F2A02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
