@@ -7,8 +7,8 @@
     <Description>A .NET SDK for the Paddle payment system API</Description>
     <Copyright>Copyright © 2024 PaddleNet Contributors</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/yourusername/PaddleNet</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/yourusername/PaddleNet.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ersinkoc/PaddleNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ersinkoc/PaddleNet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>paddle;payment;sdk;billing;subscription</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>

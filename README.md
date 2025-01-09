@@ -30,7 +30,7 @@ A .NET SDK for the Paddle payment system API, built with .NET 8.
 Clone the repository and build the solution:
 
 ```bash
-git clone https://github.com/yourusername/PaddleNet.git
+git clone https://github.com/ersinkoc/PaddleNet.git
 cd PaddleNet
 dotnet build
 ```
