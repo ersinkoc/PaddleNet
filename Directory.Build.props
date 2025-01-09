@@ -1,17 +1,16 @@
 <Project>
   <PropertyGroup>
     <Version>1.0.0</Version>
-    <Authors>PaddleNet Contributors</Authors>
-    <Company>PaddleNet</Company>
-    <Product>PaddleNet SDK</Product>
+    <Authors>Ersin Koç</Authors>
+    <Company>Ersin Koç</Company>
+    <Product>PaddleNet</Product>
     <Description>A .NET SDK for the Paddle payment system API</Description>
-    <Copyright>Copyright © 2024 PaddleNet Contributors</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/ersinkoc/PaddleNet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ersinkoc/PaddleNet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>paddle;payment;sdk;billing;subscription</PackageTags>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>paddle;payment;sdk;dotnet</PackageTags>
     
     <!-- Build settings -->
     <LangVersion>latest</LangVersion>
@@ -22,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
-    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="/" />
+    <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="/" />
   </ItemGroup>
 </Project> 

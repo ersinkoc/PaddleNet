@@ -32,7 +32,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.GetProductAsync(productId);
@@ -70,7 +70,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.ListSubscriptionsAsync(planId);
@@ -103,7 +103,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.UpdateSubscriptionPlanAsync(subscriptionId, newPlanId);
@@ -170,7 +170,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.CreateCouponAsync(request);
@@ -206,7 +206,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.ListCouponsAsync("123");
@@ -238,7 +238,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.ValidateLicenseAsync("123", "TEST-LICENSE-123");
@@ -268,7 +268,7 @@ public class PaddleClientTests
             BaseAddress = new Uri("https://vendors.paddle.com/api/2.0")
         };
 
-        var client = new PaddleClient(TestApiKey, TestVendorId, mockHttpClient);
+        var client = new PaddleClient(TestApiKey, TestVendorId, PaddleEnvironment.Sandbox, mockHttpClient);
 
         // Act
         var result = await client.ActivateLicenseAsync("123", "TEST-LICENSE-123");

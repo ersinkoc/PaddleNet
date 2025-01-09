@@ -51,13 +51,15 @@ public class PaddleClient
         _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
         _vendorId = vendorId ?? throw new ArgumentNullException(nameof(vendorId));
         _environment = environment;
-        
-        var baseUrl = environment == PaddleEnvironment.Sandbox ? SandboxBaseUrl : ProductionBaseUrl;
-        _httpClient = httpClient ?? new HttpClient { BaseAddress = new Uri(baseUrl) };
-        
-        if (httpClient != null && httpClient.BaseAddress == null)
+
+        var baseUrl = environment == PaddleEnvironment.Sandbox
+            ? "https://sandbox-vendors.paddle.com/api/2.0"
+            : "https://vendors.paddle.com/api/2.0";
+
+        _httpClient = httpClient ?? new HttpClient();
+        if (_httpClient.BaseAddress == null)
         {
-            httpClient.BaseAddress = new Uri(baseUrl);
+            _httpClient.BaseAddress = new Uri(baseUrl);
         }
     }
 
